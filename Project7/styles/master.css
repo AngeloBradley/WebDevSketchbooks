@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.maincontainer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100% 60% 55% 55% 55% 55% 55% 55% 55% 55% 55% 55% 55% 30% 40% 10% 20%;
+}
+
+.landing {
+  height: 100%;
+}
+
+.landing_overlay {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.overlay_item {
+  border: solid black 1px;
+  background-color: yellow;
+  opacity: .6;
+}
+
+.logo {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.top_nav {
+  grid-column: 6 / end;
+}
+
+.arrow {
+  grid-row: 5 / 6;
+}
+
+.left.arrow {
+  grid-column: 1 / 2;
+}
+
+.right.arrow {
+  grid-column: 10 / end;
+}
+
+.photo_info {
+  grid-area: 4 / 2 / span 4 / span 7;
+}
+
+.more_info_button {
+  background-color: yellow;
+  grid-row: 6 / 7;
+  grid-column: 3 / 4;
+}
+
+.more_info_button:hover {
+  background-color: red;
+}
+
+.city {
+  background-color: red;
+  border: black solid 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.city .description {
+  background-color: white;
+}
+
+.midlevel_banner {
+  background-image: url('photos/bricks.jpg');
+  background-repeat: repeat-x;
+  background-size: contain;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.midlevel_banner_item {
+  /* border: black solid 1px; */
+}
+
+.midlevel_banner_item.intro {
+  height: 100%;
+  width: 100%;
+  grid-row: 1 / 4;
+  grid-column: 1 / end;
+}
+
+.midlevel_banner_item.holder {
+  grid-column: 1 / 2;
+}
+
+.midlevel_banner_item.circular_link {
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  border: black solid 5px;
+  transition: width 1s, height 1s, background-color 1s, font-size 1s;
+  display: grid;
+  place-items: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  background: red;
+  opacity: .5;
+}
+
+.midlevel_banner_item.circular_link:hover {
+  height: 250px;
+  width: 250px;
+  font-size: 60px;
+  background-color: orange;
+  opacity: 1;
+}
+
+.city.Atlanta .image{
+  background-image: url('photos/skylines/skyline_atlanta.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.city.Charlotte .image{
+  background-image: url('photos/skylines/skyline_charlotte.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.city.Dallas .image{
+  background-image: url('photos/skylines/skyline_dallas.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.city.Los_Angeles .image{
+  background-image: url('photos/skylines/skyline_los_angeles.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.city.New_York .image{
+  background-image: url('photos/skylines/skyline_new_york.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.city.Minneapolis .image{
+  background-image: url('photos/skylines/skyline_minneapolis.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.city.Philadelphia .image{
+  background-image: url('photos/skylines/skyline_philadelphia.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+}

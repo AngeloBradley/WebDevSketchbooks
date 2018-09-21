@@ -1,0 +1,64 @@
+@keyframes backgroundChanger {
+  0% {
+    background-color: black;
+  }
+  33% {
+    background-color: red;
+  }
+  66% {
+    background-color: green;
+  }
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body{
+  background-color: black;
+  animation-name: backgroundChanger;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#afrofuturism {
+  background-color: black;
+  height: 100%;
+}
+
+#mma {
+  background-color: red;
+  height: 100%;
+}
+
+#ooa {
+  background-color: green;
+  height: 100%;
+}
+
+.image-container {
+  margin: auto;
+  height: 90%;
+  width: 100%;
+    background-size: contain;
+}
+
+#aff-image {
+  background-image: url('../aff_homepage_image.jpeg');
+}
+
+#ooa-image {
+  background-image: url('../ooa_homepage_image.jpeg');
+}
+
+#mma-image {
+  background-image: url('../mma_homepage_image.jpeg');
+}

@@ -1,0 +1,71 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes background{
+    0% {background-color: #DE9151;}
+    20% {background-color: #F34213;}
+    40% {background-color: #2E2E3A;}
+    60% {background-color: #BC5D2E;}
+    80% {background-color: #BBB8B2;}
+}
+
+.innerdivs{
+    height: 33.33%;
+}
+
+div:nth-child(1).light{
+    @extend .innerdivs;
+    background-color: navy;
+    animation: background 20s   infinite cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+div:nth-child(2).light{
+    @extend .innerdivs;
+    background-color: red;
+    animation: background 15s   infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+div:nth-child(3).light{
+    @extend .innerdivs;
+    background-color: #11001C;
+    animation: background 25s   infinite cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+@keyframes overDiv{
+    0% {background-color: #F3B700;}
+    20% {background-color: transparent;}
+    40% {background-color: #E57C04;}
+    60% {background-color: transparent;}
+    80% {background-color: #F63E02;}
+}
+
+.dark{
+    background-color:transparent;
+    height:33.33%;
+    animation: overDiv 10s   infinite  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.overContainer{
+    position: relative;
+    z-index: 5;
+    top:0;
+    left:0; 
+    height:100%;
+    width:100%;
+}
+
+.underContainer{
+    top:0;
+    left:0;
+    position: absolute;
+    height:100%;
+    z-index: -1;
+    width:100%;
+}
+
+
+
+
+

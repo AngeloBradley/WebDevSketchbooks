@@ -1,0 +1,233 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.main_container {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 20%;
+}
+
+.landing {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+}
+
+.countries {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+}
+
+.countries.left {
+  grid-template-columns: 70% 30%;
+}
+
+.countries .images, .countries .header {
+  height: 100%;
+  width: 100%;
+}
+
+.countries .images {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  border: black solid 15px;
+  z-index: 100;
+  background-color: black;
+}
+
+.image {
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.uae .images .image.one {
+  background-image: url("cities/Dubai/dubai_marina.jpg");
+}
+
+.uae .images .image.two {
+  background-image: url("cities/Dubai/dubai_food.jpg");
+}
+
+.uae .images .image.three {
+  background-image: url("cities/Dubai/dubai_skyline_painting.jpg");
+}
+
+.uae .images .image.four {
+  background-image: url("cities/Dubai/dubai_skyline_photo.jpg");
+}
+
+.japan .images .image.one {
+  background-image: url("cities/Tokyo/tokyo.jpg");
+}
+
+.japan .images .image.two {
+  background-image: url("cities/Tokyo/tokyo_market.jpg");
+}
+
+.japan .images .image.three {
+  background-image: url("cities/Tokyo/tokyo_shibuya.jpg");
+}
+
+.japan .images .image.four {
+  background-image: url("cities/Tokyo/tokyo_snow.jpg");
+}
+
+.thailand .images .image.one {
+  background-image: url("cities/Bangkok/bangkok_highway.jpg");
+}
+
+.thailand .images .image.two {
+  background-image: url("cities/Bangkok/bangkok_market.jpg");
+}
+
+.thailand .images .image.three {
+  background-image: url("cities/Bangkok/bangkok_skytrain.jpg");
+}
+
+.thailand .images .image.four {
+  background-image: url("cities/Bangkok/bangkok_waterway.jpg");
+}
+
+.switzerland .images .image.one {
+  background-image: url("cities/Zurich/zurich.jpg");
+}
+
+.switzerland .images .image.two {
+  background-image: url("cities/Zurich/zurich_market.jpg");
+}
+
+.switzerland .images .image.three {
+  background-image: url("cities/Zurich/zurich_skyline.jpg");
+}
+
+.switzerland .images .image.four {
+  background-image: url("cities/Zurich/zurich_waterway.jpg");
+}
+
+.uk .images .image.one {
+  background-image: url("cities/London/london_food.jpg");
+}
+
+.uk .images .image.two {
+  background-image: url("cities/London/london_subway.jpg");
+}
+
+.uk .images .image.three {
+  background-image: url("cities/London/london_skyline.jpg");
+}
+
+.uk .images .image.four {
+  background-image: url("cities/London/london_waterway.jpg");
+}
+
+.hongkong .images .image.one {
+  background-image: url("cities/hongkong/hongkong_market.jpg");
+}
+
+.hongkong .images .image.two {
+  background-image: url("cities/hongkong/hongkong_subway.jpg");
+}
+
+.hongkong .images .image.three {
+  background-image: url("cities/hongkong/hongkong_skyline.jpg");
+}
+
+.hongkong .images .image.four {
+  background-image: url("cities/hongkong/hongkong_waterway.jpg");
+}
+
+.brazil .images .image.one {
+  background-image: url("cities/saopaulo/saopaulo_market.jpg");
+}
+
+.brazil .images .image.two {
+  background-image: url("cities/saopaulo/saopaulo_subway.jpg");
+}
+
+.brazil .images .image.three {
+  background-image: url("cities/saopaulo/saopaulo_skyline.jpg");
+}
+
+.brazil .images .image.four {
+  background-image: url("cities/saopaulo/saopaulo_waterway.jpg");
+}
+
+.malaysia .images .image.one {
+  background-image: url("cities/kualalumpur/kualalumpur_market.jpg");
+}
+
+.malaysia .images .image.two {
+  background-image: url("cities/kualalumpur/kualalumpur_subway.jpg");
+}
+
+.malaysia .images .image.three {
+  background-image: url("cities/kualalumpur/kualalumpur_skyline.jpg");
+}
+
+.malaysia .images .image.four {
+  background-image: url("cities/kualalumpur/kualalumpur_waterway.jpg");
+}
+
+.france .images .image.one {
+  background-image: url("cities/paris/paris_market.jpg");
+}
+
+.france .images .image.two {
+  background-image: url("cities/paris/paris_subway.jpg");
+}
+
+.france .images .image.three {
+  background-image: url("cities/paris/paris_skyline.jpg");
+}
+
+.france .images .image.four {
+  background-image: url("cities/paris/paris_waterway.jpg");
+}
+
+.newzealand .images .image.one {
+  background-image: url("cities/auckland/auckland_market.jpg");
+}
+
+.newzealand .images .image.two {
+  background-image: url("cities/auckland/auckland_subway.jpg");
+}
+
+.newzealand .images .image.three {
+  background-image: url("cities/auckland/auckland_skyline.jpg");
+}
+
+.newzealand .images .image.four {
+  background-image: url("cities/auckland/auckland_waterway.jpg");
+}
+
+.countries .header {
+  background-color: #87CEEB;
+  display: grid;
+  place-items: center;
+}
+
+.header .title{
+  height: 100px;
+  width: 400px;
+  background-color: black;
+}
+
+.footer {
+  background-color: tan;
+}

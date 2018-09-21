@@ -1,0 +1,91 @@
+@keyframes body-color {
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: black;
+  }
+}
+
+body{
+  background-color: yellow;
+  animation-name: body-color;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+.image-container {
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+}
+
+#flying-lotus {
+  background-image: url("../../assets/aff_assets/audio_page_images/flying-lotus.jpeg");
+}
+
+#sun-ra{
+  background-image: url("../../assets/aff_assets/audio_page_images/sun-ra.jpeg");
+}
+
+#theesatisfaction{
+  background-image: url("../../assets/aff_assets/audio_page_images/theesatisfaction.jpeg");
+}
+
+#janelle-monae{
+  background-image: url("../../assets/aff_assets/audio_page_images/janelle-monae.jpeg");
+}
+
+#zapp-and-roger{
+  background-image: url("../../assets/aff_assets/audio_page_images/zapp-and-roger.jpeg");
+}
+
+#kamasi-washington{
+  background-image: url("../../assets/aff_assets/audio_page_images/kamasi-washington.jpeg");
+}
+
+#erykah-badu{
+  background-image: url("../../assets/aff_assets/audio_page_images/erykah-badu.jpeg");
+}
+
+#ras-g{
+  background-image: url("../../assets/aff_assets/audio_page_images/ras-g.jpeg");
+}
+
+#john-coltrane{
+  background-image: url("../../assets/aff_assets/audio_page_images/john-coltrane.jpeg");
+}
+
+#yusef-lateef{
+  background-image: url("../../assets/aff_assets/audio_page_images/yusef-lateef.jpeg");
+}
+
+#nwando-ebizie{
+  background-image: url("../../assets/aff_assets/audio_page_images/nwando-ebizie.jpeg");
+}
+
+#shabazz-palaces{
+  background-image: url("../../assets/aff_assets/audio_page_images/shabazz-palaces.jpeg");
+}
+
+#laura-mvula{
+  background-image: url("../../assets/aff_assets/audio_page_images/laura-mvula.jpeg");
+}
+
+#mono-poly{
+  background-image: url("../../assets/aff_assets/audio_page_images/mono-poly.jpeg");
+}
+
+#xaphryn{
+  background-image: url("../../assets/aff_assets/audio_page_images/xaphryn.jpeg");
+}
+
+#george-clinton{
+  background-image: url("../../assets/aff_assets/audio_page_images/george-clinton.jpeg");
+}

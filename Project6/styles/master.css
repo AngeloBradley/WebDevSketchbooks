@@ -1,0 +1,138 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.main_container {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100% 100% 100% 100% 20%;
+}
+
+.landing {
+  height: 100%;
+  width: 100%;
+  background-image: url("landing/la_skyline.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.neighborhoods {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+}
+
+.neighborhoods.left {
+  grid-template-columns: 70% 30%;
+}
+
+.neighborhoods .images, .neighborhoods .header {
+  height: 100%;
+  width: 100%;
+}
+
+.neighborhoods .images {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  border: black solid 0px;
+  z-index: 100;
+  background-color: black;
+}
+
+.neighborhoods.lincolnheights .images{
+  border-right: black solid 0px;
+}
+
+.image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.mountwashington .images .image.one {
+  background-image: url("neighborhoods/mountwashington/photo1.jpg");
+  background-position: left;
+}
+
+.mountwashington .images .image.two {
+  background-image: url("neighborhoods/mountwashington/photo2.jpg");
+}
+
+.mountwashington .images .image.three {
+  background-image: url("neighborhoods/mountwashington/photo3.jpg");
+  background-position: left;
+}
+
+.mountwashington .images .image.four {
+  background-image: url("neighborhoods/mountwashington/photo4.jpg");
+}
+
+.lincolnheights .images .image.one {
+  background-image: url("neighborhoods/lincolnheights/photo1.jpg");
+}
+
+.lincolnheights .images .image.two {
+  background-image: url("neighborhoods/lincolnheights/photo2.jpg");
+  background-position: right;
+}
+
+.lincolnheights .images .image.three {
+  background-image: url("neighborhoods/lincolnheights/photo3.jpg");
+}
+
+.lincolnheights .images .image.four {
+  background-image: url("neighborhoods/lincolnheights/photo4.jpg");
+  background-position: right;
+}
+
+.silverlake .images .image.one {
+  background-image: url("neighborhoods/silverlake/photo1.jpg");
+  background-position: left;
+}
+
+.silverlake .images .image.two {
+  background-image: url("neighborhoods/silverlake/photo2.jpg");
+}
+
+.silverlake .images .image.three {
+  background-image: url("neighborhoods/silverlake/photo3.jpg");
+  background-position: left;
+}
+
+.silverlake .images .image.four {
+  background-image: url("neighborhoods/silverlake/photo4.jpg");
+}
+
+.neighborhoods .header {
+  background-color: yellow;
+  display: grid;
+  place-items: center;
+}
+
+.header .title{
+  height: 100px;
+  width: 400px;
+  background-color: transparent;
+  border: black solid 10px;
+  display: grid;
+  place-items: center;
+  font-size: 50px;
+  font-family: 'Kirang Haerang', cursive;
+}
+
+.footer {
+  background-color: tan;
+}

@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  background: linear-gradient(-45deg, blue, red, orange, blue);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-blend-mode: color-dodge;
+  border: solid black;
+  border-right-width: 40px;
+  border-right-color: orange;
+  border-left-width: 20px;
+  border-left-color: red;
+  border-top-width: 30px;
+  border-bottom-width: 20px;
+  overflow: hidden;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+.rotator {
+  transform: rotate(45deg);
+  background-color: red;
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  border: solid black;
+  border-right-width: 25px;
+  border-left-width: 10px;
+  border-bottom-width: 25px;
+  border-top-width: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .70);
+}
+
+.inner {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  border: solid black;
+  border-right-width: 25px;
+  border-left-width: 20px;
+  border-top-width: 20px;
+  border-bottom-width: 50px;
+  transform: rotate(315deg);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  margin: 0 auto;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.sec {
+  height: 70%;
+  width: 70%;
+  background-color: blue;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .70);
+  margin: 0 auto;
+  transform: rotate(315deg);
+  -webkit-animation: spin 10s infinite, Gradient 5s ease infinite;
+  -moz-animation: spin 10s infinite, Gradient 5s ease infinite;
+  animation: spin 10s infinite, Gradient 5s ease infinite;
+  border: solid black;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-top-width: 30px;
+  border-left-width: 30px;
+}
+
+.thi {
+  height: 40%;
+  width: 40%;
+  background: linear-gradient(-45deg, blue, red, orange);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .60);
+  transform: rotate(270deg);
+  -webkit-animation: spin 5s infinite, Gradient 5s infinite;
+  -moz-animation: spin 5s infinite, Gradient 5s infinite;
+  animation: spin 5s infinite, Gradient 5s infinite;
+  border: solid black;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-top-width: 5px;
+  border-left-width: 5px;
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}

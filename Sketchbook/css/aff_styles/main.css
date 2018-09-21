@@ -1,0 +1,23 @@
+@keyframes backgroundChanger {
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: gold;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+body {
+  animation-name: backgroundChanger;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}

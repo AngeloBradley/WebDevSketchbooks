@@ -1,0 +1,126 @@
+body, html {
+  height: 100%;
+}
+
+/*body {
+background-image: url('../assets/index-background-2.jpeg');
+  background-color: black;
+  background-size: cover;
+}*/
+
+nav {
+  background-color: black !important;
+}
+
+@keyframes colorblocks1 {
+  0% {
+    background-color: red;
+  }
+  33% {
+    background-color: green;
+  }
+  66% {
+    background-color: black;
+  }
+}
+
+@keyframes colorblocks2 {
+  0% {
+    background-color: green;
+  }
+  33% {
+    background-color: black;
+  }
+  66% {
+    background-color: red;
+  }
+}
+
+@keyframes colorblocks3 {
+  0% {
+    background-color: black;
+  }
+  33% {
+    background-color: red;
+  }
+  66% {
+    background-color: green;
+  }
+}
+
+.imagecontainer, .imagecontainerf, .imagecontainers {
+  background-color: rgba(100, 100, 100, 0);
+  width: 24%;
+  display: inline-grid;
+  margin: 0 auto;
+  height: 50px;
+}
+
+.imagecontainer {
+  animation-name: colorblocks1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.imagecontainers {
+  animation-name: colorblocks2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.imagecontainerf {
+  animation-name: colorblocks3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.innerdiv {
+  width: 50%;
+  background-color: gray;
+  margin: 0 auto;
+  animation-name: colorblocks2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.innerinnerdiv {
+  width: 50%;
+  background-color: gray;
+  margin: 0 auto;
+  border-width: medium;
+  border-color: white;
+  animation-name: colorblocks1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+#audio-landing {
+  background-image: url('../../assets/aff_assets/image_landings/audio-landing3.jpeg');
+  
+}
+
+#video-landing{
+  background-image: url('../../assets/aff_assets/image_landings/video-landing2.jpeg');
+}
+
+#artists-landing{
+  background-image: url('../../assets/aff_assets/image_landings/artists-landing.jpeg');
+}
+
+.landing-image {
+  height: 100%;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#manifesto{
+  background-size:cover;
+  height:100%;
+  width:100%;
+}
